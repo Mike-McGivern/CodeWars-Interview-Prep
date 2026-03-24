@@ -31,3 +31,36 @@ CONTAINS
 
 END MODULE Solution
 
+
+!
+!PROGRAM TestCases
+!  USE CW2
+!  USE Solution
+!  IMPLICIT NONE
+ ! 
+ ! CALL describe("tank_vol")
+ !   CALL it("basic tests")
+ !     CALL testing(5, 7, 3848, 2940)
+ !     CALL testing(2, 7, 3848, 907)
+ !     CALL testing(0, 7, 3848, 0)
+ !     CALL testing(7, 7, 3848, 3848)
+!
+!    CALL endContext()
+!  CALL endContext()
+
+!CONTAINS
+  
+!  SUBROUTINE testing(h, d, vt, expect)
+ !   USE Solution
+!    INTEGER :: h, d, vt
+!    INTEGER :: actual, expect
+!    
+!    print *, "h: ", h, " d", d, " vt ", vt
+!    actual = tank_vol(h, d, vt)
+!    PRINT *, "ACTUAL ", actual
+!    PRINT *, "EXPECT ", expect
+!    print *, expect == actual
+!    call assertEquals(expect, actual)
+!  END SUBROUTINE testing
+  
+!END PROGRAM TestCases
